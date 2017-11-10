@@ -1,0 +1,59 @@
+/* ==================
+* Weather Widget
+* ================== */
+#HTML103 .widget-content{display:none}
+#HTML103{margin-bottom:0}
+#weather{background-color:#ff5722;padding:20px;border-radius:3px;box-shadow: 0 2px 9px 2px rgb(0, 0, 0);max-width:250px;margin:0 auto 20px}
+abbr.Today{display:block;font-family:'Changa', sans-serif;text-align:center;font-size:31px;color:#ff5722;border-radius:5px;padding:5px 0;background-color:#15202a}
+#weather i{font-size:170px;line-height:100%;text-align:center;display:block;color:#15202a;margin-bottom:-10px;margin-right:-60px}
+span.Condition{display:block;text-align:center;color:#15202a;font-family:'Changa', sans-serif;font-size:20px}
+span.Today-Temp{display:block;text-align:center;color:#15202a;font-family:Arial;font-size:24px;font-weight:700;text-transform:capitalize}
+.icon{font-family:ElbanaaAwesome;font-weight:400;font-style:normal}
+.icon-0:before{content:"\efb7"}
+.icon-1:before{content:"\efbc"}
+.icon-2:before{content:"\efbe"}
+.icon-3:before{content:"\efbd"}
+.icon-4:before{content:"\efbe"}
+.icon-5:before{content:"\efc0"}
+.icon-6:before{content:"\efc0"}
+.icon-7:before{content:"\efc0"}
+.icon-8:before{content:"\efc0"}
+.icon-9:before{content:"\efba"}
+.icon-10:before{content:"\efc0"}
+.icon-11:before{content:"\efba"}
+.icon-12:before{content:"\efba"}
+.icon-13:before{content:"\efba"}
+.icon-14:before{content:"\efba"}
+.icon-15:before{content:"\efc0"}
+.icon-16:before{content:"\efba"}
+.icon-17:before{content:"\efc0"}
+.icon-18:before{content:"\efbf"}
+.icon-19:before{content:"\efc1"}
+.icon-20:before{content:"\efc1"}
+.icon-21:before{content:"\efc1"}
+.icon-22:before{content:"\efc1"}
+.icon-23:before{content:"\efc1"}
+.icon-24:before{content:"\efb9"}
+.icon-25:before{content:"\efb9"}
+.icon-26:before{content:"\efb5"}
+.icon-27:before{content:"\efc2"}
+.icon-28:before{content:"\efb8"}
+.icon-29:before{content:"\efc2"}
+.icon-30:before{content:"\efb8"}
+.icon-31:before{content:"\efb6"}
+.icon-32:before{content:"\efb4"}
+.icon-33:before{content:"\efb6"}
+.icon-34:before{content:"\efb4"}
+.icon-35:before{content:"\efc0"}
+.icon-36:before{content:"\efb4"}
+.icon-37:before{content:"\efbe"}
+.icon-38:before{content:"\efbe"}
+.icon-39:before{content:"\efbe"}
+.icon-40:before{content:"\efbb"}
+.icon-41:before{content:"\efc0"}
+.icon-42:before{content:"\efba"}
+.icon-43:before{content:"\efc0"}
+.icon-44:before{content:"\efc2"}
+.icon-45:before{content:"\efbe"}
+.icon-46:before{content:"\efbf"}
+.icon-47:before{content:"\efbe"}

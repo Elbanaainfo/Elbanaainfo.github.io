@@ -5,7 +5,7 @@
 #copyrights{min-height:50px;padding:10px 30px;border-top:1px solid #ff5722;;overflow:hidden}
 #HTML110{display:block;margin-top:-29px;margin-right: -15px}
 #HTML110 a{color:$(copts.link);font-family:'Changa', sans-serif;display:inline-block;margin:5px 5px;font-size:13px}
-#HTML110 p{color:$(copts.text);font-family:'Changa', sans-serif;display:inline-block;font-size:13px}
+#HTML110 p{color:#aaaaaa;font-family:'Changa', sans-serif;display:inline-block;font-size:13px}
 #HTML110 a:hover{color:#ff5722 !important}
 #HTML110 .copyr-elbanaa{float:right}
 #HTML110 .c-site p:first-child:before,#HTML110 .c-des p:first-child:before{vertical-align:-2px;font-family:ElbanaaAwesome;display:inline-block;margin-left:10px;-webkit-transition:.3s ease-out;transition:.3s ease-out}

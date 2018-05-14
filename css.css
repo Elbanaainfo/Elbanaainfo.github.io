@@ -63,7 +63,7 @@ img {
 
 
 body {
-	background: #310404 url(../images/red_texture.jpg) repeat top left;
+	background: #310404 url(https://cdn.rawgit.com/Elbanaainfo/Elbanaainfo.github.io/5e4d289f/red_texture.jpg) repeat top left;
 	font-family: 'Cairo';
 	direction:rtl;
 }
@@ -168,7 +168,7 @@ h1.main,p.demos {
 	left: 50%;
 	top: 50%;
 	margin: -137px 0 0 -141px;
-	background: transparent url(../images/globe.png) no-repeat top left;
+	background: transparent url(https://cdn.rawgit.com/Elbanaainfo/Elbanaainfo.github.io/5e4d289f/globe.png) no-repeat top left;
 	-webkit-animation: fadeInBack 3.6s linear 14s backwards;
 	-moz-animation: fadeInBack 3.6s linear 14s backwards;
 	-ms-animation: fadeInBack 3.6s linear 14s backwards;

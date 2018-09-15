@@ -1416,11 +1416,11 @@ $( '.smoothscroll-top' ).click( function() {
 					""
 			} var j = d[e].innerHTML;
 		j = j.replace(a,
-			'<img style="max-width: 100%; height: auto;display: blocK;margin: 10px auto;" src="$2"" alt=""/>'
+			'<img style="max-width: 100%; height: auto;display: blocK;margin: 10px auto;border: 5px solid transparent; outline: 1px solid #eeeeee4d;" src="$2"" alt=""/>'
 		), j = j.replace(b,
-			'<div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;margin:20px auto;"><iframe style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;" src="https://www.youtube.com/embed/$2" frameborder="0" allowfullscreen></iframe></div>'
+			'<div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;margin:20px auto;border: 5px solid transparent; outline: 1px solid #eeeeee4d;"><iframe style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;" src="https://www.youtube.com/embed/$2" frameborder="0" allowfullscreen></iframe></div>'
 		), j = j.replace(c,
-			'<div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;margin:20px auto;"><iframe style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;" src="https://player.vimeo.com/video/$4" frameborder="0" allowfullscreen></iframe></div>'
+			'<div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;margin:20px auto;border: 5px solid transparent; outline: 1px solid #eeeeee4d;"><iframe style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;" src="https://player.vimeo.com/video/$4" frameborder="0" allowfullscreen></iframe></div>'
 		), d[e].innerHTML = j
 	}
 }();

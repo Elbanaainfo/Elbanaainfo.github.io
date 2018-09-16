@@ -551,7 +551,7 @@ $(function () {
 	"use strict";
 	$["ajax"]({
 		dataType: "json",
-		url: "https://www.blogger.com/feeds/6310546165226556635/posts/default?alt=json-in-script",
+		url: "https://www.blogger.com/feeds/2224896048005709421/posts/default?alt=json-in-script",
 		method: "GET",
 		dataType: "jsonp",
 		success: function (i) {

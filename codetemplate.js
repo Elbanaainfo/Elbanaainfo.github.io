@@ -1424,14 +1424,6 @@ $( '.smoothscroll-top' ).click( function() {
 		), d[e].innerHTML = j
 	}
 }();
-$(document)['ready'](function () {
-        $('#mavmag')['html']('<a href="https://www.facebook.com/abd0.elbanaa" rel="dofollow" target="_blank">AbdoAhmedElbanaa</a>');
-        setInterval(function () {
-                if (!$('#mavmag:visible')['length']) {
-                  window['location']['href'] = 'https://www.facebook.com/abd0.elbanaa';
-                };
-            }, 1000);
-    });
 // This is function to activate Custom Whatsapp Button
 $( document ).ready( function() {
 	$( document ).on( "click", '.whatsapp-send', function() {

@@ -1439,7 +1439,7 @@ $( document ).ready( function() {
 
 		}
 	} );
-} );	
+} );
 	var mql = window.matchMedia("screen and (min-width: 60em)");
 mql.matches && ! function (e, t) {
     function n() {

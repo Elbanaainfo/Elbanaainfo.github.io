@@ -1439,4 +1439,139 @@ $( document ).ready( function() {
 
 		}
 	} );
-} );	
+} );	,
+	var mql = window.matchMedia("screen and (min-width: 60em)");
+mql.matches && ! function (e, t) {
+    function n() {
+        function n(e, t) {
+            var n = a.createElement("div")
+                , r = a.body
+                , d = r.style
+                , i = r.childNodes.length;
+            typeof t != o && (n.setAttribute("id", t), d.margin = d.padding = 0, d.height = "100%", i = Math.floor(Math.random() * i) + 1), n.innerHTML = e, r.insertBefore(n, r.childNodes[i - 1])
+        }
+
+        function r(e, t) {
+            return t ? a.getElementsByTagName(t) : a.getElementById(e)
+        }
+
+        function d() {
+            r("unblocker") || n('<p>من فضلك قم بتعطيل أداة مانع الأعلانات أدبلوك AdBlock من المتصفح للدخول للموقع ، أو أستخدم متصفح أخر وشكرا لك 😊<br/>الموقع يُعتمد فقط على الأعلانات كمصدر لدخلها لذلك نرجو منك تفهم الأمر بدون أنزعاج وشكرا لك 😊</p><a href="/">تحديث الصفحة</a>', "unblocker")
+        }! function () {
+            var t, o, i = ["ad", "ads", "adsense"]
+                , s = i.length
+                , l = "";
+            for (t = 0; s > t; t++) r(i[t]) || (l += '<a id="' + i[t] + '"></a>');
+            n(l), s = i.length, setTimeout(function () {
+                for (t = 0; s > t; t++)
+                    if (o = r(i[t]), null == o.offsetParent || "none" == (e.getComputedStyle ? a.defaultView.getComputedStyle(o, null)
+                            .getPropertyValue("display") : o.currentStyle.display)) return d("#" + i[t])
+            }, 250)
+        }()
+        , function () {
+            var e, t = r(0, "img")
+                , n = ["/adsales/ad", "/adsenceSearch.", "/adtools2.", "/adv2.", "/partner_ads_", "_ads.html", ".468x60-"];
+            typeof t[0] != o && typeof t[0].src != o && (e = new Image, e.onload = function () {
+                this.onload = o, this.onerror = function () {
+                    d(this.src)
+                }, this.src = t[0].src + "#" + n.join("")
+            }, e.src = t[0].src)
+        }()
+        , function () {
+            var n, i, s, l, c, f = {
+                    "http://pagead2.googlesyndication.com/pagead/show_ads.js": "google_ad_client"
+                }
+                , u = r(0, "script")
+                , h = u.length - 1;
+            for (a.write = null, s = h; s >= 0; --s)
+                if (c = u[s], typeof f[c.src] != o) {
+                    n = a.createElement("script"), n.type = "text/javascript", n.src = c.src, l = f[c.src], e[l] = t, i = u[0], n.onload = n.onreadystatechange = function () {
+                        typeof e[l] != o || this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState || (n.onload = n.onreadystatechange = null, i.parentNode.removeChild(n), e[l] = null)
+                    }, i.parentNode.insertBefore(n, i), setTimeout(function () {
+                        e[l] === t && d(n.src)
+                    }, 2e3);
+                    break
+                }
+        }()
+    }
+    var a = e.document
+        , o = typeof t;
+    a.addEventListener ? e.addEventListener("load", n, !1) : e.attachEvent("onload", n)
+}(window);
+;,
+	function changeFontSize(a) {
+    $affectedElements["each"](function() {
+        var b = $(this);
+        b["css"]("font-size", parseInt(b["css"]("font-size")) + a)
+    })
+}
+var $affectedElements = $(".post-body");
+$affectedElements["each"](function() {
+    var a = $(this);
+    a["data"]("orig-size", a["css"]("font-size"))
+}), $("#btn-increase")["click"](function() {
+    changeFontSize(1)
+}), $("#btn-decrease")["click"](function() {
+    changeFontSize(-1)
+}), $("#btn-orig")["click"](function() {
+    $affectedElements["each"](function() {
+        var a = $(this);
+        a["css"]("font-size", a["data"]("orig-size"))
+    })
+});,
+	function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});,
+		var next_text ='الموضوع التالي';
+var prev_text='الموضوع السابق';
+var noimg ='https://3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg';
+$(document).ready(function(){var t=$(".topic-nav .next"),a=$(".topic-nav .prev")
+$.get(t.attr("href"),function(a){var r=$(a).find("h1.entry-title").text(),i=$(a).find(".post .separator img")
+try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}t.html('<span class="next-txt">'+next_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html"),
+$.get(a.attr("href"),function(t){var r=$(t).find("h1.entry-title").text(),i=$(t).find(".post .separator img")
+try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}a.html('<span class="prev-txt">'+prev_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html")});,
+	var noimg='//3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg',
+text='اعد تحميل الصفحة  لتحميل الملف مجددا';
+// CSS Ready
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+// js Ready
+!function(){var e=document.createElement("script")
+e.type="text/javascript",e.async=!0,e.src="//cdn.jsdelivr.net/gh/abdelalilebbihi/abdou_tech/gadget/download-severs.js"
+var t=document.getElementsByTagName("script")[0]
+t.parentNode.insertBefore(e,t)}();;,
+$('a.right-b').click(function() {
+  $('.blanter-wrap').animate({
+    scrollLeft: "+=500px"
+  }, "normal");
+});
+ $('a.left-b').click(function() {
+  $('.blanter-wrap').animate({
+    scrollLeft: "-=500px"
+  }, "normal");
+});;,
+	 function get_n(n) {
+    var o, t, e = decodeURIComponent(window.location.search.substring(1))
+        .split("&");
+    for (t = 0; t < e.length; t++)
+        if ((o = e[t].split("="))[0] === n) return void 0 === o[1] || o[1]
+}
+$(document)
+    .ready(function () {
+        var n = get_n("n");
+        $(".post-content")
+            .hide(), void 0 === n ? $(".content_1")
+            .show() : $(".content_" + n)
+            .show();
+        var o = $(".post-content")
+            .length;
+        if (0 != o)
+            for (i = 1; i <= o; i++) {
+                var t = window.location.pathname;
+                $("p.paging")
+                    .append($('<a href="' + t + "?n=" + i + '" class="tombol n' + i + '"> ' + i + " </a>"))
+            } else $("p.paging")
+                .hide();
+        void 0 == n && $(".tombol.n1")
+            .toggleClass("blanter"), n == n && $(".tombol.n" + n)
+            .toggleClass("blanter")
+    });
+
+	

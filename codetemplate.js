@@ -1498,7 +1498,7 @@ mql.matches && ! function (e, t) {
         , o = typeof t;
     a.addEventListener ? e.addEventListener("load", n, !1) : e.attachEvent("onload", n)
 }(window);
-;,
+;
 	function changeFontSize(a) {
     $affectedElements["each"](function() {
         var b = $(this);
@@ -1518,8 +1518,8 @@ $affectedElements["each"](function() {
         var a = $(this);
         a["css"]("font-size", a["data"]("orig-size"))
     })
-});,
-	function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});,
+});
+	function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});
 		var next_text ='الموضوع التالي';
 var prev_text='الموضوع السابق';
 var noimg ='https://3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg';
@@ -1527,7 +1527,7 @@ $(document).ready(function(){var t=$(".topic-nav .next"),a=$(".topic-nav .prev")
 $.get(t.attr("href"),function(a){var r=$(a).find("h1.entry-title").text(),i=$(a).find(".post .separator img")
 try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}t.html('<span class="next-txt">'+next_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html"),
 $.get(a.attr("href"),function(t){var r=$(t).find("h1.entry-title").text(),i=$(t).find(".post .separator img")
-try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}a.html('<span class="prev-txt">'+prev_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html")});,
+try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}a.html('<span class="prev-txt">'+prev_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html")});
 	var noimg='//3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg',
 text='اعد تحميل الصفحة  لتحميل الملف مجددا';
 // CSS Ready
@@ -1546,7 +1546,7 @@ $('a.right-b').click(function() {
   $('.blanter-wrap').animate({
     scrollLeft: "-=500px"
   }, "normal");
-});;,
+});
 	 function get_n(n) {
     var o, t, e = decodeURIComponent(window.location.search.substring(1))
         .split("&");

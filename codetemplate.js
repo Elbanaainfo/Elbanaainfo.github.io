@@ -1536,7 +1536,7 @@ function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement(
 !function(){var e=document.createElement("script")
 e.type="text/javascript",e.async=!0,e.src="//cdn.jsdelivr.net/gh/abdelalilebbihi/abdou_tech/gadget/download-severs.js"
 var t=document.getElementsByTagName("script")[0]
-t.parentNode.insertBefore(e,t)}();;,
+t.parentNode.insertBefore(e,t)}();
 $('a.right-b').click(function() {
   $('.blanter-wrap').animate({
     scrollLeft: "+=500px"

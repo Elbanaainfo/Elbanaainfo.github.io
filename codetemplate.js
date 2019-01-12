@@ -349,6 +349,9 @@ y.params.hashnav&&y.hashnav&&y.hashnav.init(),y.params.a11y&&y.a11y&&y.a11y.init
 
 
 // Breaking News Feed
+$(window)["one"]("scroll", j);
+
+function j() {
 $( ".breaking-news-bar .HTML" ).each( function() {
 	var inco = $( this ).find( "#breaking-news-feed" ).text(),
 		postNumber = 10;		
@@ -391,8 +394,11 @@ $( ".breaking-news-bar .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Intro Post Slider Feed
+$(window)["one"]("scroll", q);
+
+function q() {
 $( ".intro-posts .HTML" ).each( function() {
 	var inco = $( this ).find( "#intro-posts-feed" ).text(),
 		postNumber = 4;
@@ -488,8 +494,11 @@ $( ".intro-posts .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Intro Big Posts Feed
+$(window)["one"]("scroll", w);
+
+function w() {
 $( ".intro-big-posts .HTML" ).each( function() {
 	var inco = $( this ).find( "#intro-big-posts-feed" ).text(),
 		postNumber = 2;
@@ -547,6 +556,7 @@ $( ".intro-big-posts .HTML" ).each( function() {
 		}
 	} );
 } );
+}
 $(function () {
 	"use strict";
 	$["ajax"]({
@@ -594,6 +604,9 @@ $(function () {
 	});
 })
 // First Post Feed
+$(window)["one"]("scroll", y);
+
+function y() {
 $( ".post-feed-1 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed1" ).text(),
 		postNumber = 5;
@@ -663,8 +676,11 @@ $( ".post-feed-1 .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Second Post Feed
+$(window)["one"]("scroll", u);
+
+function u() {
 $( ".post-feed-2 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed2" ).text(),
 		postNumber = 4;
@@ -722,8 +738,11 @@ $( ".post-feed-2 .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Third Post Feed
+$(window)["one"]("scroll", i);
+
+function i() {
 $( ".post-feed-3 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed3" ).text(),
 		postNumber = 4;
@@ -781,8 +800,11 @@ $( ".post-feed-3 .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Fourth Post Feed
+$(window)["one"]("scroll", o);
+
+function o() {
 $( ".post-feed-4 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed4" ).text(),
 		postNumber = 6;
@@ -826,8 +848,11 @@ $( ".post-feed-4 .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // Fifth Post Feed
+$(window)["one"]("scroll", g);
+
+function g() {
 $( ".post-feed-5 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed5" ).text(),
 		postNumber = 10;
@@ -903,8 +928,11 @@ $( ".post-feed-5 .HTML" ).each( function() {
 		}
 	} );
 } );
-
+}
 // The Last Post Feed
+$(window)["one"]("scroll", k);
+
+function k() {
 $( ".post-feed-6 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed6" ).text(),
 		postNumber = 6;
@@ -962,7 +990,11 @@ $( ".post-feed-6 .HTML" ).each( function() {
 		}
 	} );
 } );
+}
 // First Post Feed
+$(window)["one"]("scroll", m);
+
+function m() {
 $( ".post-feed-7 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed7" ).text(),
 		postNumber = 5;
@@ -1032,7 +1064,11 @@ $( ".post-feed-7 .HTML" ).each( function() {
 		}
 	} );
 } );
+}
 // Fifth Post Feed
+$(window)["one"]("scroll", b);
+
+function b() {
 $( ".post-feed-8 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed8" ).text(),
 		postNumber = 10;
@@ -1108,7 +1144,11 @@ $( ".post-feed-8 .HTML" ).each( function() {
 		}
 	} );
 } );
+}
 // The Last Post Feed
+$(window)["one"]("scroll", c);
+
+function c() {
 $( ".post-feed-9 .HTML" ).each( function() {
 	var inco = $( this ).find( "#post-feed9" ).text(),
 		postNumber = 6;
@@ -1166,6 +1206,7 @@ $( ".post-feed-9 .HTML" ).each( function() {
 		}
 	} );
 } );
+}
 /* =====================================================
 = End Custom Post's Feed
 ===================================================== */
@@ -1399,6 +1440,9 @@ $( '.smoothscroll-top' ).click( function() {
 } );
 
  // This is function to Comment Photo And Videos 
+		$(window)["one"]("scroll", p);
+
+function p() {
 ! function () {
 	for (var a =
 			/(\[img\])?((http:|https:)?\/\/\S*?\.(jpg|gif|png|bmp|jpeg]))(\[\/img\])?/gi,
@@ -1423,7 +1467,7 @@ $( '.smoothscroll-top' ).click( function() {
 			'<div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;margin:20px auto;border: 5px solid transparent; outline: 1px solid #eeeeee4d;"><iframe style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;" src="https://player.vimeo.com/video/$4" frameborder="0" allowfullscreen></iframe></div>'
 		), d[e].innerHTML = j
 	}
-}();
+}();}
 // This is function to activate Custom Whatsapp Button
 $( document ).ready( function() {
 	$( document ).on( "click", '.whatsapp-send', function() {

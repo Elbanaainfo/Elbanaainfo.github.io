@@ -1586,9 +1586,8 @@ $affectedElements["each"](function() {
     })
 });
 	function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});
-		$(window)["one"]("scroll", gaw);
-
-function gaw() {
+		$(window)["one"]("scroll", is);
+function is() {
 		var next_text ='الموضوع التالي';
 var prev_text='الموضوع السابق';
 var noimg ='https://3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg';
@@ -1597,9 +1596,9 @@ $.get(t.attr("href"),function(a){var r=$(a).find("h1.entry-title").text(),i=$(a)
 try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}t.html('<span class="next-txt">'+next_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html"),
 $.get(a.attr("href"),function(t){var r=$(t).find("h1.entry-title").text(),i=$(t).find(".post .separator img")
 try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}a.html('<span class="prev-txt">'+prev_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html")});
+}
 	var noimg='//3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg',
-	    }
-text='اعد تحميل الصفحة  لتحميل الملف مجددا';
+	    text='اعد تحميل الصفحة  لتحميل الملف مجددا';
 // CSS Ready
 function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 // js Ready

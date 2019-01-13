@@ -349,7 +349,9 @@ y.params.hashnav&&y.hashnav&&y.hashnav.init(),y.params.a11y&&y.a11y&&y.a11y.init
 
 
 // Breaking News Feed
-j
+$(window)["one"]("scroll", j);
+function j() {
+
 $( ".breaking-news-bar .HTML" ).each( function() {
 	var inco = $( this ).find( "#breaking-news-feed" ).text(),
 		postNumber = 10;		

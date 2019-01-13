@@ -1691,9 +1691,7 @@ $(".menu li ").each(function() {
 			})
 		})
 	}
-	$(window)["one"]("scroll", za);
-
-
+	
 // Custom Main Menu                                
 $("#LinkList103").each(function() {
 	var e = "<ul id='nav2'><a href='/'> </a><li></li><li><ul id='sub-menu'>";

@@ -1,5 +1,4 @@
-$(window)["one"]("scroll", io);
-function io() {
+$(window)["one"]("scroll", favouritePosts);
 function favouritePosts(json) {
     var htmlcode = '<ul class="swiper-wrapper favourite-posts">';
     document.write(htmlcode);
@@ -70,4 +69,4 @@ function relatedPosts(json) {
         document.write(item)
     }
 }
-}
+

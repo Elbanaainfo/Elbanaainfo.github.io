@@ -349,9 +349,7 @@ y.params.hashnav&&y.hashnav&&y.hashnav.init(),y.params.a11y&&y.a11y&&y.a11y.init
 
 
 // Breaking News Feed
-$(window)["one"]("scroll", j);
-
-function j() {
+j
 $( ".breaking-news-bar .HTML" ).each( function() {
 	var inco = $( this ).find( "#breaking-news-feed" ).text(),
 		postNumber = 10;		
@@ -1360,33 +1358,51 @@ $("#sidebar-wrapper .widget h2").wrap("<div class='widget-title'/>");
 $("#footer-wrapper .widget h2").wrap("<div class='widget-title'/>");
 
 // Activate Post Header
-// $(".post-header").appendTo(".post-info-overlay");
+$(".post-header").appendTo(".post-info-overlay");
 
 // Contact Form
 $('.ContactForm').appendTo('.blogger-items-contact')
 
 // Wrap Elements for Popular Posts Sidebar Widget
+		$(window)["one"]("scroll", kk);
+
+function kk() {
 $('.popular-posts li').each(function() {
     $(this).find(".item-title, .item-snippet").wrapAll(
         '<div class="item-caption" />');
 });
+}
+		$(window)["one"]("scroll", jj);
 
+function jj() {
 // Custom Click event for Mobile Menu 
 $(".open-mobile-menu").click(function(){
 	$(".menu-container").css("left", "0px");
 	$("body").addClass( "stop-m" );
 	$(".mobil-m-overlay").removeClass( "hide" );
 });
+}
+		$(window)["one"]("scroll", yy);
+
+function yy() {
 $(".menu-close-icon").click(function(){
 	$(".menu-container").css("left", "-284px");
 	$("body").removeClass( "stop-m" );
 	$(".mobil-m-overlay").addClass( "hide" );
 });
+}
+		$(window)["one"]("scroll", qq);
+
+function qq() {
 $(".mobil-m-overlay").click(function(){
 	$(this).addClass( "hide" );
 	$("body").removeClass( "stop-m" );
 	$(".menu-container").css("left", "-284px");
 });
+}
+		$(window)["one"]("scroll", comments);
+
+function comments() {
 
 // Show & Hide Comments
 $( ".hide-comments" ).click( function() {
@@ -1395,7 +1411,10 @@ $( ".hide-comments" ).click( function() {
   $( ".zer2" ).toggle();
 
 });
+}
+		$(window)["one"]("scroll", img);
 
+function img() {
 // Optimize Images
 $('.post-thumb a').attr('style', function(i, src) {
   return src.replace('/s72-c', '/s1600');
@@ -1423,7 +1442,8 @@ $(".avatar-image-container img").attr('src', function(i, src) {
         '//3.bp.blogspot.com/-fgwrcZWeRrU/V26tvNcGtsI/AAAAAAAAAG4/lGwGnQDZsNY7bAPr8hVorZruD-jHHxxOgCLcB/s50/anonyme.png'
     );
 });
-
+}
+		
 //Click event to scroll to top
 $( document ).on( 'scroll', function() {
 	if ( $( window ).scrollTop() > 100 ) {
@@ -1564,6 +1584,9 @@ $affectedElements["each"](function() {
     })
 });
 	function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});
+		$(window)["one"]("scroll", gaw);
+
+function gaw() {
 		var next_text ='الموضوع التالي';
 var prev_text='الموضوع السابق';
 var noimg ='https://3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg';
@@ -1573,6 +1596,7 @@ try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noi
 $.get(a.attr("href"),function(t){var r=$(t).find("h1.entry-title").text(),i=$(t).find(".post .separator img")
 try{var n='<img src="'+i[0].src+'"alt="'+r+'"/>'}catch(c){var n='<img src="'+noimg+'"alt="'+r+'"/>'}a.html('<span class="prev-txt">'+prev_text+"</span><h4>"+r+'</h4><div class="topic-img">'+n+"</div>")},"html")});
 	var noimg='//3.bp.blogspot.com/-qnLm52EsvBE/VDkrZ46TWXI/AAAAAAAAAsM/tiJ36WiboU4/s1600/90.jpg',
+	    }
 text='اعد تحميل الصفحة  لتحميل الملف مجددا';
 // CSS Ready
 function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");

@@ -1693,7 +1693,6 @@ $(".menu li ").each(function() {
 	}
 	$(window)["one"]("scroll", za);
 
-function za() {
 
 // Custom Main Menu                                
 $("#LinkList103").each(function() {
@@ -1771,6 +1770,5 @@ $(".menu li ").each(function() {
 	($(this).find("ul").length > 0 || $(this).find(".mega-container").length > 0) && $(this).addClass("drop-down"), $(this).find("ul").length > 0 && $(this).addClass("drop-down")
 });
                           
-}
 
 

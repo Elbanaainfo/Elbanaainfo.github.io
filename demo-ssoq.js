@@ -1645,4 +1645,53 @@ $(document)
 
 	function redirect(){$('html')['html']('<img border="0" data-original-height="493" data-original-width="644" height="488" src="https://4.bp.blogspot.com/-UaySFepFlpQ/W7XnvHbS_2I/AAAAAAAAAhc/1WCQNsLdBbQWEbDHClLBy3pPuo97VvY0QCLcBGAs/s1600/redirect.png" width="640" style=" position: fixed;top: calc(34% - 160px);right: calc(45% - 240px);">');setTimeout(function(){window['location']['assign']('https://www.facebook.com/abd0.elbanaa')},2000e3)}
 var Loct=window['location']['hostname']['toLowerCase']();var Link=window['location']['href']['toLowerCase']();var Cont='';var Cont2='';Cont+='صُمم بوستط : <a href=\'https://www.facebook.com/abd0.elbanaa\' target=\'_blank\'>AbdoAhmedElbanaa</a> | مشغل بواسطة <a href=\'http://www.blogger.com/\'>Blogger</a>';if($('.BaNaTeam')['length']!==0){if(Loct['indexOf']('xfost')!=-1){$('.BaNaTeam')['addClass']('impo')['append'](Cont2)}else{$('.BaNaTeam')['addClass']('impo')['append'](Cont)};$('footer')['addClass']('impo');setInterval(function(){$('#impo')['each'](function(){if($(this)['css']('opacity')<1||$(this)['css']('visibility')=='hidden'||$(this)['is'](':hidden')){redirect()}})},100)}else{redirect()};
-		
+	
+		if (isPost) {
+$(window)["one"]("scroll", cc);
+function cc() {
+var text_month = ["يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر"];
+$(document)['ready'](function () {
+    var x = $['trim']($('.post-body')['text']());
+    if ('[ارشيف]' === x) {
+        var D = $('.post-body');
+        $['ajax']({
+            url: '/feeds/posts/default?alt=json-in-script'
+            , type: 'get'
+            , dataType: 'jsonp'
+            , success: function (x) {
+                for (var w = [], b = 0; b < x['feed']['category']['length']; b++) w['push'](x['feed']['category'][b]['term']);
+                w = w['join']("/");
+                D['html']('<div class="feedsite-sitemap"></div>'), $('.post-body .feedsite-sitemap')['text'](w);
+                var _ = $('.feedsite-sitemap')['text']()['split']("/")
+                    , O = "";
+                for (get = 0; get < _['length']; ++get) O += '<span>' + _[get] + '</span>';
+                $('.feedsite-sitemap')['html'](O), $('.feedsite-sitemap span')['each'](function () {
+                    var f = $(this)
+                        , r = $(this)['text']();
+                    $['ajax']({
+                        url: '/feeds/posts/default/-/' + r + '?alt=json-in-script'
+                        , type: 'get'
+                        , dataType: 'jsonp'
+                        , success: function (x) {
+                            for (var w = "", b = '<ul class="feedsite-toc">', _ = 0; _ < x['feed']['entry']['length']; _++) {
+                                for (var O = 0; O < x['feed']['entry'][_]['link']['length']; O++)
+                                    if ('alternate' == x['feed']['entry'][_]['link'][O]['rel']) {
+                                        w = x['feed']['entry'][_].link[O]['href'];
+                                        break
+                                    } var D = x['feed']['entry'][_].title.$t
+                                    , K = x['feed']['entry'][_]['published'].$t
+                                    , c = K['substring'](0, 4)
+                                    , C = K['substring'](5, 7)
+                                    , o = K['substring'](8, 10);
+                                b += '<li><div class="toc-date">' + ('<span class="day">' + o['replace'](/^0+/, "") + '</span><span class="month">' + text_month[parseInt(C, 10)] + '</span><span class="year">' + c + '</span>') + '</div><div class="feedsite-icon"></div><span class="feedsite-post"><a href="' + w + '">' + D + '</a></span></li>'
+                            }
+                            b += '</ul>', f['replaceWith']('<div class="feedsite-toc-wrap"><div class="feedsite-cat">' + r + "</div>" + b + '</div>')
+                        }
+                    })
+                })
+            }
+        })
+    }
+});
+}
+		}

@@ -422,7 +422,7 @@ $( ".intro-posts .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -522,7 +522,7 @@ $( ".intro-big-posts .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -642,7 +642,7 @@ $( ".post-feed-1 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -704,7 +704,7 @@ $( ".post-feed-2 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -766,7 +766,7 @@ $( ".post-feed-3 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -876,7 +876,7 @@ $( ".post-feed-5 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -956,7 +956,7 @@ $( ".post-feed-6 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -1030,7 +1030,7 @@ $( ".post-feed-7 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -1092,7 +1092,7 @@ $( ".post-feed-8 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];
@@ -1172,7 +1172,7 @@ $( ".post-feed-9 .HTML" ).each( function() {
 				var postCategory = " ";
 				var postThumb = " ";
 				var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-				var month2 = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var month2 = [ "يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر" ];
 				var day = date.split( "-" )[ 2 ].substring( 0, 2 );
 				var m = date.split( "-" )[ 1 ];
 				var year = date.split( "-" )[ 0 ];

@@ -1,0 +1,87 @@
+    <script type='text/javascript'>          
+/*<![CDATA[*/
+var id= "402353436956574035"
+$(function () {
+	"use strict";
+	$["ajax"]({
+		dataType: "json",
+		url: "https://www.blogger.com/feeds/"+id+"/posts/default?alt=json-in-script",
+		method: "GET",
+		dataType: "jsonp",
+		success: function (i) {
+			var j;
+			for (j = 0; j < i["feed"]["entry"]["length"]; j = j + 1) {
+				var k = $(i["feed"]["entry"][j]["content"].$t);
+				if (j === 0 && !$("body")["hasClass"]("error_page")) {
+					var m, o, g = k["find"]("blogId");
+					var n = [];
+					for (var o = 0; o < g["length"]; o = o + 1) {
+						n["push"]($(g[o])["text"]())
+					};
+					var p = window["blogId"]["toLowerCase"]();
+					var q = window["blogId"]["toLowerCase"]();
+					var r, h = n["length"] - 1;
+					for (r = 0; r < n["length"]; r = r + 1) {
+						if (p["indexOf"](n[r]) == -1) {
+							if (r == h && q["indexOf"]("post-preview") == -1 && q["indexOf"](
+									"www.blogger") == -1 && q["indexOf"]("b/layout-preview") == -1 &&
+								q["indexOf"]("b/preview") == -1 && q["indexOf"]("translate.google") ==
+								-1 && q["indexOf"]("webcache.googleusercontent") == -1 && q[
+									"indexOf"]("template-editor") == -1) {
+								$("html")["html"](k["find"](".redirect")["html"]())
+							}
+						} else {
+							var s = $(i["feed"]["entry"][j]["content"].$t)["find"]("script");
+							var t = $(i["feed"]["entry"][j]["content"].$t)["find"]("style");
+							$("head")["append"](t);
+							$("head")["append"](s);
+							break
+						}
+					}
+				};
+				if (j === 1) {
+					var t = $(i["feed"]["entry"][j]["content"].$t)["find"]("style");
+					$("head")["append"](t)
+				}
+			}
+		}
+	});
+});
+/*]]>*/
+      blogId=&#39;<data:blog.blogId/>&#39;
+</script>
+
+
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+<div class="remain">
+<br />
+<br />
+<br />
+<br />
+<div class="redirect">
+<div class="ops">
+<br />
+<br />
+<br />
+<style>
+.keypage{text-align:center;font-size:12px;font-family:cairo;background:#ff0808;color:#fff;padding:24px;margin:0 auto;width:63%}
+</style>
+<br />
+<div class="keypage">
+<div class="activetheme">
+<i class="fa fa-exclamation-triangle"></i><br />
+<h2>
+يجب عليك تفعيل القالب عبر كود التفعيل </h2>
+<h4>
+هذا القالب ليس ملك اي مدونة آخرى غير مدونة عبدو تكنولوجي</h4>
+اما اذا حصلت على القالب مجانا من أحد الأشخاص أو المواقع فلن يعمل القالب معك</div>
+</div>
+<br /></div>
+</div>
+</div>
+<ul class="BlogId">
+<blogid>1243069390322624186</blogid>
+</ul>
+</div>
